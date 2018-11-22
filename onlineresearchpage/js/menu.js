@@ -18,8 +18,15 @@ window.addEventListener("scroll", function(){
    title[1].classList.add("fadedtitle"); 
       title[2].classList.add("fadedtitle"); 
   }
-  else if (window.pageYOffset < 400){
-    title[1].classList.remove("fadedtitle");
-      title[2].classList.remove("fadedtitle");
+    
+    else if (window.pageYOffset < 400){
+    title[0].classList.remove("fadedtitle");
+      title[1].classList.remove("fadedtitle");
+        title[2].classList.remove("fadedtitle");
+  }
+    
+     if (window.pageYOffset > 8000){
+   title[0].classList.add("fadedtitle"); 
+         title[1].classList.remove("fadedtitle");
   }
 },false);
