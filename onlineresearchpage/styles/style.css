@@ -157,10 +157,6 @@ header>div:nth-of-type(2)>h1.fadedtitle {
     opacity: 0.2;
 }
 
-header>div:nth-of-type(2)>h1:nth-of-type(1).fadedtitledissapear {
-    display: none;
-}
-
 main {
     width: calc(100vw - 10rem);
     padding-left: 5rem;
@@ -219,6 +215,7 @@ main>section>div>div {
 main>section>div>div:nth-of-type(2)>img {
     width: 100%;
     margin-bottom: 1rem;
+    box-shadow: -5px 10px 50px -6px rgba(0,0,0,0.25);
 }
 
 main>section li {
