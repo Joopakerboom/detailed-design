@@ -3,7 +3,7 @@
 
 //var body = document.querySelector("body");
 //var y = window.scrollTop;
-var title = document.querySelectorAll("header>div:nth-of-type(2)>h1");
+var title = document.querySelectorAll("body>div>div>h1");
 //
 //function scrollfade() {
 //    if (y > 100) {
@@ -25,8 +25,10 @@ window.addEventListener("scroll", function(){
         title[2].classList.remove("fadedtitle");
   }
     
-     if (window.pageYOffset > 8000){
+     if (window.pageYOffset > 6305){
    title[0].classList.add("fadedtitle"); 
          title[1].classList.remove("fadedtitle");
   }
 },false);
+
+console.log(window.pageYOffset);
