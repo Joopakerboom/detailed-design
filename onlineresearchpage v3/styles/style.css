@@ -1,0 +1,199 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: "SF Pro Display Bold";
+    src: url(../fonts/SF-Pro-Display-Bold.otf);
+}
+
+@font-face {
+    font-family: "SF Pro Display Regular";
+    src: url(../fonts/SF-Pro-Display-Regular.otf);
+}
+
+*{
+    transition: 1s;
+    transition-delay: 0.2s;
+}
+
+h1 {
+   font-family: "SF Pro Display Bold";
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-family: "SF Pro Display Bold";
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: "SF Pro Display Bold";
+    font-size: 1.5rem;
+}
+
+p, li {
+    font-family: "SF Pro Display Regular";
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+li {
+   margin-left: 1.5rem;
+   
+}
+
+ul {
+    list-style: circle;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: "SF Pro Display Regular";
+    line-height: 1.5;
+    font-size: 0.8rem;
+}
+
+body {
+    background-color: #FFF;
+}
+
+header>img, main>img, main>video {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    height:auto;
+  vertical-align: middle;
+  display: block;
+}
+
+/*
+main>img:nth-of-type(1), main>img:nth-of-type(2), main>img:nth-of-type(2), main>img:nth-of-type(2), main>img:nth-of-type(2), main>img:nth-of-type(2), main>img:nth-of-type(2) {
+    margin-top: 10rem;
+    opacity: 1;
+}
+*/
+
+@keyframes imgappearanimation {
+    0% {margin-top: 10rem; opacity: 1;}
+    50% {margin-top: 5rem; opacity: 1;}
+    100% {margin-top: 0rem; opacity: 1;}
+}
+
+main>img:nth-of-type(1).imgappear, main>img:nth-of-type(2).imgappear2, main>img:nth-of-type(2).imgappear3, main>img:nth-of-type(2).imgappear7, main>img:nth-of-type(2).imgappear8, main>img:nth-of-type(2).imgappear9, main>img:nth-of-type(2).imgappear10 {
+    animation-name: imgappearanimation;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+main>section {
+    height: 70vh;
+    overflow: hidden;
+    overflow-x: auto;
+    position: relative;
+    
+}
+
+@keyframes scrollimg {
+    0% {left: 40%;}
+    100% {left: 60%;}
+}
+
+main>section>img {
+    left: 40%;
+    animation-name: scrollimg;
+    animation-fill-mode: forwards;
+    animation-duration: 20s;
+    animation-delay: 20s;
+    transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+    width: 120%;
+}
+
+footer {
+    width: 100vw;
+    height: 3rem;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -10.5rem;
+}
+
+footer>a {
+    z-index: 20;
+    padding: 0.5rem;
+    border: #FF2D55 1px solid;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    color: #FF2D55;
+     transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+    left: 50%;
+}
+
+footer>a:hover {
+    background-color: #FF2D55;
+    color: white;
+    border: none;
+}
+
+footer>a:focus {
+    background-color: #FF2D55;
+    color: white;
+    border: none;
+}
